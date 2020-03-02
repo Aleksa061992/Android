@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="welcome_text">Добро пожаловать!</string>
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="button">Кнопочка</string>
+    <string name="button_create">Создать</string>
+    <string name="button_edit">Изменить</string>
+    <string name="but_create">Создать</string>
+    <string name="but_edit">Изменить</string>
+    <string name="head_create">Создать новый элемент словаря</string>
+    <string name="head_edit">Изменить элемент словаря</string>
+    <string name="word">Слово</string>
+    <string name="translate">Перевод</string>
+    <string name="menu_create">Добавить</string>
+</resources>
+
