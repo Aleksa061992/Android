@@ -4,12 +4,13 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.widget.EditText;
 
+import com.example.myfirstapp.R;
+
 import androidx.annotation.Nullable;
 
 import com.arellomobile.mvp.MvpAppCompatActivity;
-import com.example.myfirstapp.R;
 
-public class EditActivity extends MvpAppCompatActivity {
+public class AddActivity extends MvpAppCompatActivity {
 
     private EditText word;
     private EditText translate;
@@ -18,10 +19,10 @@ public class EditActivity extends MvpAppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
 
-        setContentView(R.layout.edit);
+        setContentView(R.layout.create);
 
-        word = findViewById(R.id.editWord);
-        translate = findViewById(R.id.editTranslate);
-
+        word = findViewById(R.id.addWord);
+        translate = findViewById(R.id.addTranslate);
     }
+
 }

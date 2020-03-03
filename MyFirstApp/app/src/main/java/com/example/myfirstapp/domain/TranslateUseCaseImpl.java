@@ -1,12 +1,12 @@
 package com.example.myfirstapp.domain;
 
 import com.example.myfirstapp.Language;
-import com.example.myfirstapp.RecyclerItem;
+import com.example.myfirstapp.Translate;
 
 public class TranslateUseCaseImpl implements TranslateUseCase {
 
     @Override
-    public RecyclerItem translate(String word, Language lang) {
+    public Translate translate(String word, Language langWord, Language langTranslate) {
         return null;
     }
 }

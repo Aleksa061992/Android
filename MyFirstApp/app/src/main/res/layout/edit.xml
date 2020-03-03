@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/editHead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/translateEdit"
+        android:id="@+id/editTranslate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonEdit"
+        android:id="@+id/editButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"
