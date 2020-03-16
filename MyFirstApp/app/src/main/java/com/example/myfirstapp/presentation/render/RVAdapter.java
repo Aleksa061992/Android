@@ -12,21 +12,39 @@ import com.example.myfirstapp.Translate;
 
 import java.util.List;
 
+
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.TranslateHolder> {
+    private OnUserClickListener onUserClickListener;
+
+    public RVAdapter(OnUserClickListener onUserClickListener) {
+        this.onUserClickListener = onUserClickListener;
+    }
+
     public static class TranslateHolder extends RecyclerView.ViewHolder {
         TextView word;
         TextView translate;
 
         public TranslateHolder(View itemView) {
             super(itemView);
+
             word = itemView.findViewById(R.id.word);
             translate = itemView.findViewById(R.id.translate);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
         }
 
         public void bind(Translate item) {
             this.word.setText(item.getWord());
             this.translate.setText(item.getTranslate());
+
         }
+
+
     }
 
     private List<Translate> item;
@@ -53,12 +71,16 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.TranslateHolder> {
     @Override
     public void onBindViewHolder(TranslateHolder translateHolder, int i) {
         Translate item = this.item.get(i);
-        //recycleItemHolder.bind(item);
+
         translateHolder.word.setText(item.getWord());
         translateHolder.translate.setText(item.getTranslate());
     }
 
     public void setData(List<Translate> item) {
         this.item = item;
+    }
+
+    public interface OnUserClickListener {
+        void onUserClick(Translate translate);
     }
 }

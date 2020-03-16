@@ -1,7 +1,12 @@
 package com.example.myfirstapp;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Translate {
 
+    @PrimaryKey
     private int id;
     private String word;
     private String translate;

@@ -21,8 +21,8 @@ public class AddActivity extends MvpAppCompatActivity {
 
         setContentView(R.layout.create);
 
-        word = findViewById(R.id.addWord);
-        translate = findViewById(R.id.addTranslate);
+        //word = findViewById(R.id.addWord);
+        //translate = findViewById(R.id.addTranslate);
     }
 
 }
